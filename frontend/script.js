@@ -183,3 +183,33 @@ window.addEventListener("resize", function() {
 
 loop();
 setInterval(loop, 1000 / 60);
+
+// Abrir o modal da História do Tarot
+document.getElementById("open-history").addEventListener("click", function() {
+  document.getElementById("history-modal").style.display = "flex";
+});
+
+// Abrir o modal dos Arcanos Maiores
+document.getElementById("open-arcanos").addEventListener("click", function() {
+  document.getElementById("arcanos-modal").style.display = "flex";
+});
+
+// Fechar o modal da História do Tarot
+document.getElementById("close-history").addEventListener("click", function() {
+  document.getElementById("history-modal").style.display = "none";
+});
+
+// Fechar o modal dos Arcanos Maiores
+document.getElementById("close-arcanos").addEventListener("click", function() {
+  document.getElementById("arcanos-modal").style.display = "none";
+});
+
+// Fechar o modal clicando fora do conteúdo do modal
+window.addEventListener("click", function(event) {
+  if (event.target === document.getElementById("history-modal")) {
+    document.getElementById("history-modal").style.display = "none";
+  }
+  if (event.target === document.getElementById("arcanos-modal")) {
+    document.getElementById("arcanos-modal").style.display = "none";
+  }
+});

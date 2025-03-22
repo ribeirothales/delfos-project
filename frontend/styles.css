@@ -109,6 +109,87 @@ canvas {
   background-color: var(--purple-600);
 }
 
+/* o que é o tarot  */
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fundo escuro */
+  display: none; /* Inicialmente escondido */
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: rgb(46, 1, 54);
+  padding: 30px; /* Aumentei o padding para deixar o conteúdo mais espaçoso */
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Aumentei a largura máxima do modal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-y: auto; /* Permite rolagem no conteúdo se necessário */
+  max-height: 90vh; /* Limita a altura do modal para não ocupar a tela inteira */
+}
+
+/* Botão X para fechar no canto superior direito */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #f44336;
+}
+
+.modal h2 {
+  font-size: 28px; /* Aumentei o tamanho da fonte para o título */
+  color: #fff;
+  margin-bottom: 20px; /* Aumentei o espaçamento entre o título e o conteúdo */
+}
+
+.modal p {
+  color: #ddd;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.8; /* Aumentei o espaçamento entre linhas para facilitar a leitura */
+  margin-bottom: 15px;
+  max-width: 90%; /* Limita o texto para não ficar muito largo */
+}
+
+/* Botões */
+.buttons-about {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about-tarot {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.about-tarot:hover {
+  background-color: #0056b3;
+}
+
+
 
 
 /* Navigation */
