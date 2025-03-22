@@ -116,8 +116,10 @@ canvas {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Fundo escuro */
-  display: none; /* Inicialmente escondido */
+  background: rgba(0, 0, 0, 0.7);
+  /* Fundo escuro */
+  display: none;
+  /* Inicialmente escondido */
   justify-content: center;
   align-items: center;
   z-index: 999;
@@ -125,17 +127,21 @@ canvas {
 
 .modal {
   background-color: rgb(46, 1, 54);
-  padding: 30px; /* Aumentei o padding para deixar o conteúdo mais espaçoso */
+  padding: 30px;
+  /* Aumentei o padding para deixar o conteúdo mais espaçoso */
   border-radius: 10px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 800px; /* Aumentei a largura máxima do modal */
+  max-width: 800px;
+  /* Aumentei a largura máxima do modal */
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  overflow-y: auto; /* Permite rolagem no conteúdo se necessário */
-  max-height: 90vh; /* Limita a altura do modal para não ocupar a tela inteira */
+  overflow-y: auto;
+  /* Permite rolagem no conteúdo se necessário */
+  max-height: 90vh;
+  /* Limita a altura do modal para não ocupar a tela inteira */
 }
 
 /* Botão X para fechar no canto superior direito */
@@ -154,18 +160,22 @@ canvas {
 }
 
 .modal h2 {
-  font-size: 28px; /* Aumentei o tamanho da fonte para o título */
+  font-size: 28px;
+  /* Aumentei o tamanho da fonte para o título */
   color: #fff;
-  margin-bottom: 20px; /* Aumentei o espaçamento entre o título e o conteúdo */
+  margin-bottom: 20px;
+  /* Aumentei o espaçamento entre o título e o conteúdo */
 }
 
 .modal p {
   color: #ddd;
   font-size: 16px;
   text-align: justify;
-  line-height: 1.8; /* Aumentei o espaçamento entre linhas para facilitar a leitura */
+  line-height: 1.8;
+  /* Aumentei o espaçamento entre linhas para facilitar a leitura */
   margin-bottom: 15px;
-  max-width: 90%; /* Limita o texto para não ficar muito largo */
+  max-width: 90%;
+  /* Limita o texto para não ficar muito largo */
 }
 
 /* Botões */
@@ -173,6 +183,14 @@ canvas {
   display: flex;
   justify-content: center;
   gap: 15px;
+
+  
+  display: flex;
+  align-items: left; /* Centraliza na horizontal */
+  justify-content: left; /* Centraliza na vertical */
+  width: 100%; /* Ocupa toda a largura disponível */
+  
+
 }
 
 .about-tarot {
@@ -186,7 +204,7 @@ canvas {
 }
 
 .about-tarot:hover {
-  background-color: #0056b3;
+  background-color: var(--purple-700);
 }
 
 
@@ -235,7 +253,7 @@ canvas {
 }
 
 .logo-icon {
-  
+
   display: flex;
   padding-left: 60px;
 
@@ -568,7 +586,7 @@ canvas {
 .hero_image {
   position: relative;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 
 }
 
@@ -598,6 +616,8 @@ canvas {
   background-position: top;
   background-repeat: no-repeat;
   max-width: 400px;
+  margin: 0 100px -230px 20px;
+  
 
 }
 
@@ -976,7 +996,13 @@ canvas {
   font-size: 12px;
 }
 
+
+
+
+
 /* Media Queries */
+
+
 @media (min-width: 640px) {
   .hero-title {
     font-size: 3.75rem;
@@ -998,7 +1024,6 @@ canvas {
     width: auto;
     justify-self: center;
   }
-
 
 
 
@@ -1068,13 +1093,14 @@ canvas {
   .hero-title2 {
     font-size: 1rem;
     top: 10px;
-    
+
   }
 
   .logo-icon {
     padding: 0;
     left: 200px;
   }
+
   .logo-icon img {
     /* width: 1200px; */
     padding: 0;
@@ -1085,12 +1111,85 @@ canvas {
   .waitlist-button {
     font-size: 14px;
     left: 50px;
-    
-    
+
+
   }
+
   .hero-content h1 {
-    font-size:  40px ;
+    font-size: 40px;
   }
+
+  .about {
+    flex-direction: column;
+    /* Ajusta a disposição dos elementos */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    padding: 20px;
+    /* Reduz o padding */
+  }
+
+  .hero_image img {
+    width: 80%;
+    /* Reduz o tamanho da imagem */
+    max-width: 400px;
+  }
+
+  .about_title h1 {
+    font-size: 1.8rem;
+    /* Ajusta o tamanho do título */
+  }
+
+  .about_title p {
+    font-size: 1rem;
+    /* Reduz o tamanho do texto */
+  }
+
+  .buttons-about {
+    display: flex;
+    flex-direction: column;
+    /* Empilha os botões */
+    gap: 10px;
+    /* Adiciona espaçamento */
+  }
+
+  .about-tarot {
+    width: 80%;
+    /* Ajusta o tamanho dos botões */
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .about {
+    flex-direction: column !important; 
+    text-align: center !important; 
+    padding: 0px !important; 
+    /* background-color: #222 !important; */
+  }
+
+  .section_title span {
+    
+
+  }
+
+  .hero_image img {
+    width: 70% !important;
+    max-width: 350px !important;
+  }
+
+  .about_title h1 {
+    font-size: 1.6rem !important; /* Reduz o título */
+  }
+
+  .buttons-about {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .about-tarot {
+    width: 90% !important;
+    max-width: 280px !important;
+  }
+
 
 
 }
@@ -1105,16 +1204,16 @@ canvas {
   .navbar {
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
+
   }
 
   .navbar-content {
-    /* gap: 10px; */
-    
+    gap: 10px;
+    margin-left: 11px;
+
   }
 
-  .button-nav {
-    
-  }
+  .button-nav {}
 
 
   .logo-icon img {
@@ -1125,7 +1224,7 @@ canvas {
   .button-nav {
     /* flex-direction: column; */
     width: 100%;
-    
+
   }
 
   .waitlist-button {
@@ -1134,7 +1233,83 @@ canvas {
     width: 80%; */
     /* Botões ocupam mais espaço para melhor toque */
   }
+
+  .about {
+    padding: 15px;
+    /* Reduz ainda mais o padding */
+  }
+
+  .hero_image img {
+    width: 90%;
+    /* Garante que a imagem não fique muito pequena */
+  }
+
+  .about_title h1 {
+    font-size: 1.5rem;
+  }
+
+  .about_title p {
+    font-size: 0.9rem;
+  }
+
+  .buttons-about {
+    gap: 5px;
+  }
+
+  .about-tarot {
+    width: 100%;
+    max-width: 250px;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  /* segunda div  */
+
+  .about {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .bg-sparkle {
+    display: none;
+  }
+
+  .hero_image img {
+    width: 120% !important;
+  }
+
+  .about_title h1 {
+    font-size: 1.4rem !important;
+  }
+  .about_title span {
+    /* margin-left: 45px !important; */
+    text-align: center !important;
+
+  }
+
+  .buttons-about button {
+    itens-align: center !important;
+    justify-content: center !important;
+  
+    }
+  .buttons-about {
+    gap: 20px;
+  }
+
+  .about-tarot {
+    width: 100% !important;
+  }
+
 }
+
+@media screen and (max-width: 360px) {
+  .button-nav {
+    /* gap: 10px; */
+    width: 500px;
+
+  }
+}
+
 
 
 
@@ -1181,9 +1356,13 @@ canvas {
   text-transform: uppercase;
   /* font-weight: 900; */
   color: black;
-
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
   font-weight: bolder;
+  display: block; /* Garante que o span se comporte como um bloco */
+  text-align: left;
+  width: 100%; 
 
 
 }
@@ -1192,6 +1371,7 @@ canvas {
 
   color: #fff;
   text-align: center;
+  justify-content: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
