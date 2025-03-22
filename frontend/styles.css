@@ -46,7 +46,7 @@ canvas {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   /* Fundo escuro */
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
   /* Desfoque do fundo */
   display: none;
   /* Inicialmente escondido */
@@ -144,7 +144,7 @@ canvas {
 .navbar-left {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  /* gap: 4rem; */
 }
 
 .logo {
@@ -154,13 +154,15 @@ canvas {
 }
 
 .logo-icon {
+  
   display: flex;
   padding-left: 60px;
 
 }
 
 .logo-icon img {
-  max-width: 20%;
+  max-width: 100%;
+  width: 100px;
 }
 
 .logo-dot {
@@ -615,7 +617,7 @@ canvas {
 .testimonial-content {
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px); */
   border-radius: 1rem;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -745,7 +747,7 @@ canvas {
 
 .contact-form-container {
   background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px); */
   border-radius: 0.75rem;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -981,21 +983,25 @@ canvas {
   .hero-title2 {
     font-size: 2rem;
     top: 10px;
+    
   }
 
   .logo-icon {
     padding: 0;
+    left: 200px;
   }
   .logo-icon img {
-    width: 1200px;
+    /* width: 1200px; */
     padding: 0;
+    left: 200px;
     /* Reduz um pouco a logo */
   }
 
   .waitlist-button {
     font-size: 14px;
     left: 50px;
-    backdrop-filter: blur(20px);
+    
+    
   }
 
 }
@@ -1003,11 +1009,22 @@ canvas {
 @media screen and (max-width: 480px) {
   .logo-img {
     width: 50%;
+
     /* Reduz ainda mais para telas muito pequenas */
   }
 
+  .navbar {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+  }
+
   .navbar-content {
-    gap: 10px;
+    /* gap: 10px; */
+    
+  }
+
+  .button-nav {
+    
   }
 
   .logo-icon img {
