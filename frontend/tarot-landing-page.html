@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delfos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="imagex/png" href="/img/logo-img.png">
+</head>
+
+<body>
+
+    <!-- login e signup -->
+
+    <div id="login-modal" class="modal-background">
+        <div class="modal">
+            <span id="close-login" class="close-btn">&times;</span>
+            <h1>Entre</h1>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signup-modal" class="modal-background">
+        <div class="modal">
+            <span id="close-signup" class="close-btn">&times;</span>
+            <h2>Registre-se</h2>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-content">
+                    <div class="navbar-left">
+                        <a href="/" class="logo">
+                            <div class="logo-icon">
+                                <img src="img/logo-text.png" alt="">
+                            </div>
+                        </a>
+                        <!-- <div class="navbar-links">
+              <button class="nav-button">Features</button>
+              <button class="nav-button">Developers</button>
+              <button class="nav-button">Pricing</button>
+              <button class="nav-button">Changelog</button>
+            </div> -->
+                    </div>
+                    <div class="button-nav">
+                        <button class="waitlist-button" id="login-btn">Entre</button>
+                        <button class="waitlist-button" id="signup-btn">Registre-se</button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <!-- Gradient Background -->
+            <div class="gradient-bg">
+                <canvas id="canvas"></canvas>
+                <div class="gradient-1"></div>
+                <div class="gradient-2"></div>
+                <div class="gradient-3"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="badge">
+                    <div class="badge-dot"></div>
+                    <span class="badge-text">TAROT ONLINE</span>
+                </div>
+
+                <div>
+                    <img src="img/logo4.png" alt="site logo" class="logo-img">
+                </div>
+
+
+                <h1 class="hero-title2">
+                    Veja o que<br>
+                    as cartas <span class="highlight">querem te dizer!</span>
+                </h1>
+
+                <p class="hero-description"></p>
+
+                <button class="start-button" id="glowButton">JOGAR</button>
+            </div>
+
+
+            <!-- Introdução ao site -->
+
+            <div class="about section testimonials-section">
+                <div class="section_page">
+                    <div class="hero_image aboutimg">
+                        <img src="img/cards.png" alt="" id="animationtopDown">
+                        <img src="img/tknvlt.png" alt="" class="bg-sparkle">
+                        <!-- <img src="/img/lnfrlw-1024x548.png" alt="" id="section_image"> -->
+                    </div>
+                </div>
+                <div class="about_title section_title">
+                    <span class="glow">Delfos Tarot</span>
+                    <h1>Saiba mais sobre o tarot</h1>
+                    <div>
+                        <p>O tarot é um sistema de cartas usado para orientação, autoconhecimento e interpretação de situações. Suas imagens carregam símbolos e arquétipos que representam desafios, oportunidades e padrões da vida. </p>
+                        <br>
+                        <p>O tarot auxilia na reflexão e na tomada de decisões, oferecendo insights sobre o presente.</p>
+                        <br>
+                        <p> Explore os mistérios das
+                            cartas e obtenha insights para sua vida com diferentes tipos de leituras:</p>
+                        <br>
+                        <ul class="list" style="list-style: none;">
+                            <li>🔮 <strong>Tiragem de 1 Carta</strong> – Uma resposta direta para sua pergunta.</li>
+                            <li>🔮 <strong>Tiragem de 3 Cartas</strong> – Passado, presente e futuro revelados.</li>
+                            <li>🔮 <strong>Cruz Celta</strong> – Uma análise profunda da sua jornada.</li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="buttons-about">
+                        <button class="about-tarot">História do tarot</button>
+                        <button class="about-tarot">Os arcanos maiores</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Testimonials Section -->
+            <!-- <div class="testimonials-section">
+                <div class="testimonials-container">
+                    <div class="testimonials-grid">
+                       
+                        <div class="testimonial-card">
+                            <div class="testimonial-glow"></div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-profile">
+                                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GicK90aYtt8zrKnsr4RPexb2hOnWFR.png"
+                                        alt="Talia Taylor" class="profile-image">
+                                </div>
+                                <blockquote class="testimonial-quote">
+                                    <p>Escolha como tirar:</p>
+                                </blockquote>
+                                <ul>
+                                    <li>Uma carta</li>
+                                    <li>Três cartas</li>
+                                    <li>Cruz celta</li>
+                                </ul>
+                            
+                            </div>
+                        </div>
+
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-glow"></div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-profile">
+                                    <img src="placeholder.svg?height=96&width=96" alt="Alex Chen" class="profile-image">
+                                </div>
+                                <blockquote class="testimonial-quote">
+                                    <p>Escolha entre diferentes baralhos"</p>
+                                </blockquote>
+                                <footer class="testimonial-footer">
+                                    <div class="testimonial-name">Alex Chen</div>
+                                    <div class="testimonial-position">Lead Analyst @ DataFlow</div>
+                                </footer>
+                            </div>
+                        </div>
+
+                    
+                        <div class="testimonial-card">
+                            <div class="testimonial-glow"></div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-profile">
+                                    <img src="placeholder.svg?height=96&width=96" alt="Sarah Martinez"
+                                        class="profile-image">
+                                </div>
+                                <blockquote class="testimonial-quote">
+                                    <p>Leitura feita com AI</p>
+                                </blockquote>
+                                <footer class="testimonial-footer">
+                                    <div class="testimonial-name">Sarah Martinez</div>
+                                    <div class="testimonial-position">CTO @ TechForward</div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- banner  -->
+
+            <div class="banner">
+                <div class="banner-main">
+                    <div class="banner-text">
+                        <h1>Entre agora mesmo e veja o que as cartas querem te dizer!</h1>
+                        <p>O tarot não revela o futuro, mas ilumina o caminho para que você o construa.</p>
+                    </div>
+                    <div>
+                        <button class="start-button" id="glowButton">JOGAR</button>
+                    </div>
+                    <!-- <button class="start-button" id="glowButton">JOGAR</button> -->
+
+                    
+                </div>
+            </div>
+        
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <div class="contact-container">
+                    <h2 class="section-title">Fale conosco</h2>
+                    <p class="section-description">
+                        Se tiver alguma sugestão, dúvida ou até elogios não hesite em mandar um e-mail.
+                    </p>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Primeiro Nome</label>
+                                    <input type="text" placeholder="Seu nome" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Sobrenome</label>
+                                    <input type="text" placeholder="Seu sobrenome" class="form-input">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">E-mail</label>
+                                    <input type="email" placeholder="silva@email.com" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Assunto</label>
+                                    <input type="text" placeholder="Motivo do contato" class="form-input">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Mensagem</label>
+                                <textarea rows="8" placeholder="Digite aqui sua mensagem..."
+                                    class="form-textarea"></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-button">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-container">
+                    <nav class="footer-nav">
+                        <p><a href="https://www.linkedin.com/in/ribeirothales/" target="_blank">@ 2025 Design by Thales
+                                Ribeiro. All Rights Reserved.</a></p>
+
+                    </nav>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <a class="back-to-top" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="script.js"></script>
+</body>
+
+</html>
