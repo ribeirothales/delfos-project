@@ -438,7 +438,8 @@ canvas{
 }
 
 .start-button:hover {
-  background: transparent;
+  /* background: transparent; */
+  background: var(--purple-600);
   color: white;
   border-color: white;
   box-shadow: 0 0 50px var(--purple-600);
@@ -648,7 +649,7 @@ canvas{
   width: 85%;
   margin: 0 auto;
   background-color: transparent;
-  background-image: linear-gradient(90deg, #E75469 0%, #A93Ef8 100%) !important;
+  background-image: linear-gradient(90deg, #d3102d 0%, #8b1cda 100%) !important;
   border-radius: 10px;
 }
 
@@ -784,8 +785,8 @@ canvas{
 }
 
 .submit-button {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--purple-600);
+  color: white;
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 2rem;
@@ -796,7 +797,7 @@ canvas{
 }
 
 .submit-button:hover {
-  background-color: var(--gray-100);
+  background-color: var(--purple-900);
 }
 
 .section-description {
