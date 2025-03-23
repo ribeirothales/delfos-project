@@ -184,12 +184,15 @@ canvas {
   justify-content: center;
   gap: 15px;
 
-  
+
   display: flex;
-  align-items: left; /* Centraliza na horizontal */
-  justify-content: left; /* Centraliza na vertical */
-  width: 100%; /* Ocupa toda a largura disponível */
-  
+  align-items: left;
+  /* Centraliza na horizontal */
+  justify-content: left;
+  /* Centraliza na vertical */
+  width: 100%;
+  /* Ocupa toda a largura disponível */
+
 
 }
 
@@ -617,7 +620,7 @@ canvas {
   background-repeat: no-repeat;
   max-width: 400px;
   margin: 0 100px -230px 20px;
-  
+
 
 }
 
@@ -1160,16 +1163,13 @@ canvas {
   }
 
   .about {
-    flex-direction: column !important; 
-    text-align: center !important; 
-    padding: 0px !important; 
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 0px !important;
     /* background-color: #222 !important; */
   }
 
-  .section_title span {
-    
-
-  }
+  .section_title span {}
 
   .hero_image img {
     width: 70% !important;
@@ -1177,7 +1177,8 @@ canvas {
   }
 
   .about_title h1 {
-    font-size: 1.6rem !important; /* Reduz o título */
+    font-size: 1.6rem !important;
+    /* Reduz o título */
   }
 
   .buttons-about {
@@ -1189,6 +1190,12 @@ canvas {
     width: 90% !important;
     max-width: 280px !important;
   }
+
+  .paragrafos {
+    margin: 0 auto;
+    /* Garante que continue centralizado */
+  }
+
 
 
 
@@ -1279,7 +1286,8 @@ canvas {
     bottom: auto !important;
     align-items: center;
     justify-content: center;
-    margin: 0 auto !important; /* Remove margens antigas e centraliza */
+    margin: 0 auto !important;
+    /* Remove margens antigas e centraliza */
     left: auto !important;
     top: auto !important;
     transform: none !important;
@@ -1294,6 +1302,7 @@ canvas {
   .about_title h1 {
     font-size: 1.4rem !important;
   }
+
   .about_title span {
     /* margin-left: 45px !important; */
     text-align: center !important;
@@ -1303,8 +1312,9 @@ canvas {
   .buttons-about button {
     itens-align: center !important;
     justify-content: center !important;
-  
-    }
+
+  }
+
   .buttons-about {
     gap: 20px;
   }
@@ -1312,6 +1322,68 @@ canvas {
   .about-tarot {
     width: 100% !important;
   }
+
+  .section_title p {
+    /* max-width: 200% !important;
+    width: 200%; */
+    /* Centraliza a div horizontalmente */
+    /* text-align: justify !important; */
+    /* justify-content: center !important;
+    align-items: center !important;
+    display: block !important; */
+
+  }
+
+  .about-title,
+  .section_title {
+    width: 85% !important;
+    /* max-width: 100% !important; */
+  }
+
+  .about-title,
+  .section_title h1 {
+    width: 100% !important;
+    /* max-width: 100% !important; */
+  }
+
+  .banner-main {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .banner-text h1,
+  .banner-main span {
+    font-size: 1rem;
+  }
+
+  .banner-main p {
+    font-size: 17px;
+  }
+
+  .banner-main button {
+    justify-content: center;
+    
+
+  }
+  .button-crystal {
+    justify-content: center !important;
+    align-items: center !important;
+
+  }
+
+  .banner-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo */
+    text-align: center; /* Garante alinhamento correto */
+}
+
+.start-button {
+    display: block; /* Garante que o botão não fique inline */
+    /* margin: 20px auto;  */
+}
+
+  
 
 }
 
@@ -1330,8 +1402,10 @@ canvas {
 
 
 
-
-
+.paragrafos {
+  max-width: 100%;
+  width: 100%;
+}
 
 
 
@@ -1373,9 +1447,10 @@ canvas {
   justify-content: center;
   font-size: 1.5rem;
   font-weight: bolder;
-  display: block; /* Garante que o span se comporte como um bloco */
+  display: block;
+  /* Garante que o span se comporte como um bloco */
   text-align: left;
-  width: 100%; 
+  width: 100%;
 
 
 }
