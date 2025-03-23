@@ -67,7 +67,8 @@ canvas {
 /* Botão X para fechar no canto superior direito */
 .close-btn {
   position: absolute;
-  left: 750px;
+  margin-right: 10px;
+  /* left: 750px; */
   font-size: 30px;
   font-weight: bold;
   color: white !important;
@@ -97,7 +98,7 @@ canvas {
   cursor: pointer;
   width: 100%;
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .modal button:hover {
@@ -1251,6 +1252,13 @@ canvas {
 
     margin-bottom: 50px;
   }
+  
+  .modal {
+    max-width: 600px !important; /* Reduz o tamanho no tablet */
+    padding: 20px !important; /* Ajuste o padding se necessário */
+  }
+  
+  
 
 
 
@@ -1263,6 +1271,13 @@ canvas {
 
     /* Reduz ainda mais para telas muito pequenas */
   }
+
+  .modal {
+    max-width: 90% !important; /* Largura máxima ajustada para celular */
+    width: 100% !important; /* Garante que o modal ocupe 100% da largura disponível */
+    padding: 15px !important; /* Ajuste o padding para celulares */
+  }
+
 
   .navbar {
     background: rgba(0, 0, 0, 0.2);
