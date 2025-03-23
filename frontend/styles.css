@@ -1378,8 +1378,8 @@ canvas {
     text-align: center; /* Garante alinhamento correto */
 }
 
-.start-button {
-    display: block; /* Garante que o botão não fique inline */
+.button-crystal {
+    display: block; 
     /* margin: 20px auto;  */
 }
 
